@@ -140,7 +140,6 @@ MAX_SOURCES=5
 | Throughput | 12-20 queries/min | > 10/min |
 | Memory Usage | 4-6GB | < 8GB |
 
-## 🎮 Demo Script for Leadership
 
 ### 1. **Document Upload Demo**
 ```bash
