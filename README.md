@@ -86,24 +86,15 @@ Visit `http://localhost:8501` to access the demo!
 ## 📁 Project Structure
 
 ```
-rag-demo/
-├── README.md
-├── LICENSE
+RAG/
+├── rag_demo.py
 ├── requirements.txt
 ├── setup.bat
-├── .gitignore
-├── docs/
-│   ├── SETUP_GUIDE.md
-├── src/
-│   ├── rag_demo.py
-│   ├── components/
-│   │   ├── __init__.py
-│   │   ├── pdf_parser.py
-│   │   ├── vector_db.py
-│   │   ├── llm_manager.py
-│   │   └── rag_pipeline.py
-└── chroma_db/
-    └── .gitkeep
+├── prerequisite.txt
+├── README.md
+├── LICENSE
+└── .gitignore
+
 ```
 
 ## 🔧 Configuration
@@ -193,52 +184,7 @@ Every response includes:
 
 ## 🛠️ Development
 
-### Running Tests
 
-```bash
-# Install test dependencies
-pip install pytest pytest-cov
-
-# Run tests
-pytest tests/ -v
-
-# With coverage
-pytest tests/ --cov=src --cov-report=html
-```
-
-### Code Quality
-
-```bash
-# Install dev dependencies
-pip install black isort flake8
-
-# Format code
-black src/
-isort src/
-
-# Lint
-flake8 src/
-```
-
-## 📚 API Reference
-
-### RAGPipeline Class
-
-```python
-from src.rag_pipeline import RAGPipeline
-
-# Initialize
-pipeline = RAGPipeline()
-pipeline.initialize()
-
-# Process documents
-success = pipeline.process_documents(pdf_files)
-
-# Query
-result = pipeline.query("Your question here")
-```
-
-See [API_REFERENCE.md](docs/API_REFERENCE.md) for complete documentation.
 
 ## 🐛 Troubleshooting
 
@@ -247,7 +193,7 @@ See [API_REFERENCE.md](docs/API_REFERENCE.md) for complete documentation.
 **1. "ImportError: cannot import name 'cached_download'"**
 ```bash
 # Run the fix script
-fix_dependencies.bat
+# check if there are version mismatch and install the required package, refer prerequisites.txt if you missed any package
 ```
 
 **2. "Ollama connection failed"**
@@ -295,11 +241,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Streamlit** for the web interface
 - **LangChain** for RAG pipeline components
 
-## 📞 Support
+## 📬 Contact
 
-- 📧 Email: support@yourcompany.com
-- 💬 Discord: [Join our community](https://discord.gg/your-invite)
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/rag-demo/issues)
+Made with ❤️ by [Pannagendra KL](https://github.com/Pannagendra)
 
 ---
 
