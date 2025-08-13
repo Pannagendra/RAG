@@ -1,0 +1,63 @@
+# Install Python 3.11+ (recommended)
+# Download from python.org and add to PATH
+
+# Install Git for Windows
+# Download from git-scm.com
+
+# Install Visual Studio Code (optional but recommended)
+# Download from code.visualstudio.com
+
+# Create virtual environment
+python -m venv rag_demo
+rag_demo\Scripts\activate
+
+# Upgrade pip
+python -m pip install --upgrade pip
+
+1. Vector Database Setup (Chroma)
+# Install Chroma and dependencies
+pip install chromadb==0.4.22
+pip install sentence-transformers==2.2.2
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+2. Local LLM Setup (Ollama)
+Step-by-step Ollama installation:
+
+Download Ollama for Windows:
+
+Go to https://ollama.ai/download/windows
+Download and run the installer
+
+
+Install a suitable model:
+# Open Command Prompt or PowerShell
+# Install Llama 3.1 8B (good balance of speed/quality for 16GB RAM)
+ollama pull llama3.1:8b
+
+# Alternative: Lighter model for faster inference
+ollama pull phi3:mini
+
+# Test the installation
+ollama run llama3.1:8b "Hello, how are you?"
+
+3. PDF Parser & Additional Dependencies
+
+# PDF processing
+pip install PyPDF2==3.0.1
+pip install pymupdf==1.23.14  # Alternative: fitz
+pip install python-docx==1.1.0
+
+# RAG pipeline components
+pip install langchain==0.1.5
+pip install langchain-community==0.0.20
+pip install langchain-chroma==0.1.0
+pip install ollama==0.1.7
+
+# Web interface (optional)
+pip install streamlit==1.31.0
+pip install gradio==4.16.0
+
+# Utilities
+pip install numpy==1.24.3
+pip install pandas==2.2.0
+pip install python-dotenv==1.0.0

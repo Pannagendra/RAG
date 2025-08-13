@@ -91,12 +91,9 @@ rag-demo/
 ├── LICENSE
 ├── requirements.txt
 ├── setup.bat
-├── fix_dependencies.bat
 ├── .gitignore
 ├── docs/
 │   ├── SETUP_GUIDE.md
-│   ├── API_REFERENCE.md
-│   └── TROUBLESHOOTING.md
 ├── src/
 │   ├── rag_demo.py
 │   ├── components/
@@ -105,16 +102,6 @@ rag-demo/
 │   │   ├── vector_db.py
 │   │   ├── llm_manager.py
 │   │   └── rag_pipeline.py
-│   └── utils/
-│       ├── __init__.py
-│       └── config.py
-├── tests/
-│   ├── __init__.py
-│   ├── test_pdf_parser.py
-│   ├── test_vector_db.py
-│   └── test_rag_pipeline.py
-├── sample_data/
-│   └── sample_document.pdf
 └── chroma_db/
     └── .gitkeep
 ```
